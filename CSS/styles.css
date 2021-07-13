@@ -95,6 +95,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -435,7 +436,9 @@ body {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition-property: fill, width, height;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Вutton  */
@@ -653,6 +656,8 @@ body {
   display: block;
   position: relative;
   transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .type-cover {
@@ -755,6 +760,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 .close-btn {
   position: absolute;
@@ -801,4 +807,30 @@ body {
   background: var(--accent-color);
   border-radius: 2px;
   bottom: 0;
+}
+
+.action-title {
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--primary-texr-color);
+  margin-bottom: 12px;
+}
+.textarea {
+  resize: none;
+}
+.form-list {
+  padding: 40px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.textarea::placeholder {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
